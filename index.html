@@ -7,6 +7,22 @@
 	<body>
 		<h1 class="title">Coding Dojo Puzzleganza!</h1>
 		<p class="flavor">What technology should I use to build my Halloween-themed website?</p>
+		<form><p>
+			<select id="puzzle">
+				<option>Assignments</option>
+				<option>Maximal Path</option>
+				<option>Pieces of 8</option>
+				<option>Python</option>
+				<option>A Representative Sample</option>
+				<option>Something's Missing</option>
+				<option>Transposition</option>
+				<option>Virtual Code</option>
+				<option>Meta</option>
+			</select>
+			<input type="text" id="answer">
+			<input type="submit" value="Check answer!">
+		</p></form>
+		<div id="results"></div>
 		<h3>First, work on these puzzles:</h3>
 		<ul>
 			<li><a href="assignments">Assignments</a></li>
@@ -43,4 +59,6 @@
 			</tr>
 		</table>
 	</body>
+	<script src="sha1.js"></script>
+	<script src="answer_check.js"></script>
 </html>
