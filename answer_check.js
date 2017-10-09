@@ -47,7 +47,3 @@ const answer_check_button = document.querySelector("form").addEventListener("sub
 	document.querySelector("#results").innerHTML += `<p>${message}</p>`
 	document.querySelector("#answer").value = ""
 })
-
-function check_answer(){
-	let puzzle = document.querySelector("#puzzle").value
-}
