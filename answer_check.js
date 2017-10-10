@@ -2,7 +2,7 @@ const answer_hashes = {
 	'826daadfb0b9486a61801e48ed719e81a6bf7d11': 1,
 	'770bf43798208e0f7b34ef91a344fd01ddceb18e': 1,
 	'467a50271041fa79a7670fb03c645245faaaa49f': 1,
-	'c7cf2b4ab7db6032ba5eaa9b0101b959312147b0': 1,
+	'46fc74d9955f30746c14f1f375989e4880f231fb': 1,
 	'0fe507befdacae06447c33ea0cd36ac4510cf077': 1,
 	'c72686450a7455f8f897b0a0b715f64d9954e961': 1,
 	'ee98001f3012b6443c48ca2461ed41a34835deac': 1,
@@ -15,8 +15,7 @@ const answer_hashes = {
 	'c4c5b98d964319e334f46bba1bb4b1ffd835b934': 3,
 	'e3b8e57ae30792335e7cfcb0498c89a863c8e3c7': 3,
 	'9b895b4d5ad3b23f1e6d43fe7a855109f5f3c4e5': 3,
-	'4eaa29e95e8466e254a4eda0000476d44627621a': 3, 
-	'a1a315296f5023c6cf0eec44fc7e8e34aed651a9': 3,
+	'a1a315296f5023c6cf0eec44fc7e8e34aed651a9': 3 
 }
 
 const answer_check_button = document.querySelector("form").addEventListener("submit", (e) => {

@@ -55,3 +55,7 @@ img {
 	width: 150px;
 	padding: 10px 0px;
 }
+
+code {
+	background-color: #DDDDDD;
+}
