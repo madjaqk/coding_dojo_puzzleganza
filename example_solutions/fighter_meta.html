@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fighter Meta</title>
+	</head>
+	<body>
+		<h3>This is an example of how to solve the <a href="http://www.mit.edu/~puzzle/2017/round/fighter.html">Fighter metapuzzle</a> from the 2017 MIT Mystery Hunt</h3>
+		<p>As a reminder, the metapuzzle combines the answers to every puzzle in a round into another puzzle.  Some metas come with other information; for instance, the <a href="http://www.mit.edu/~puzzle/2017/round/minstrels.html">Modest Minstrels</a> meta from 2017 included a short Renaissance-y song clip with each puzzle that indicates which letters to take from the answers, and going even further, 2015's <a href="http://web.mit.edu/puzzle/www/2015/puzzle/coral_reef_meta/">Coral Reef meta</a> gives a series of 45 instructions to perform to transform your answers.  (The meta for the Coding Dojo Puzzleganza also includes an additional piece of information to clue at its central mechanism.)  However, the Fighter meta doesn't do this; instead, all we have to work with are the answers themselves and only the answers themselves.</p>
+		<p>Here are the answers my team had when we cracked this meta:</p>
+		<table>
+			<tr>
+				<th>Puzzle</th>
+				<th>Answer</th>
+			</tr>
+			<tr>
+				<td>Before and AfterMASH</td>
+				<td>COULD HAVE BEEN</td>
+			</tr>
+			<tr>
+				<td>Bigram Battleships</td>
+				<td>HYDROCOOLS</td>
+			</tr>
+			<tr>
+				<td>Crossing Your Arms</td>
+				<td>PRETEEN</td>
+			</tr>
+			<tr>
+				<td>Double Crosser</td>
+				<td>???</td>
+			</tr>
+			<tr>
+				<td>Get Her!  Together!</td>
+				<td>BOBBY HENDRICKS</td>
+			</tr>
+			<tr>
+				<td>It Takes Two</td>
+				<td>???</td>
+			</tr>
+			<tr>
+				<td>Let's Get Physical</td>
+				<td>LOLL</td>
+			</tr>
+			<tr>
+				<td>Now Where Was I</td>
+				<td>SANAA</td>
+			</tr>
+			<tr>
+				<td>Swifties</td>
+				<td>OBSESS</td>
+			</tr>
+			<tr>
+				<td>A Turn of Phrase</td>
+				<td>FIREWEED</td>
+			</tr>
+			<tr>
+				<td>Up in the Air</td>
+				<td>???</td>
+			</tr>
+		</table>
+		<p>Look at LOLL, SANAA, and OBSESS in particular.  Notice anything unusual?  They all have a four-letter chunk in ABAA pattern, and now that we're looking for it we can see that the longers answers do too.  In addition, this is less obvious, but every answer we have so far is a different length, starting with LOLL at four letters and going up to BOBBY HENDRICKS at 14.  (Indeed, since there are 11 puzzles, those would have to be the start and end points if no length is skipped or appears twice.)  Let's try reordering the data with this in mind:</p>
+		<table>
+			<tr>
+				<th>Length</th>
+				<th>Puzzle</th>
+				<th>Answer</th>
+				<th>A</th>
+				<th>B</th>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Let's Get Physical</td>
+				<td>LOLL</td>
+				<td>L</td>
+				<td>O</td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>Now Where Was I</td>
+				<td>SANAA</td>
+				<td>A</td>
+				<td>N</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>Swifties</td>
+				<td>OBSESS</td>
+				<td>S</td>
+				<td>E</td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>Crossing Your Arms</td>
+				<td>PRETEEN</td>
+				<td>E</td>
+				<td>T</td>
+			</tr>
+			<tr>
+				<td>8</td>
+				<td>A Turn of Phrase</td>
+				<td>FIREWEED</td>
+				<td>E</td>
+				<td>W</td>
+			</tr>
+			<tr>
+				<td>9</td>
+				<td>???</td>
+				<td>???</td>
+				<td>?</td>
+				<td>?</td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>Bigram Battleships</td>
+				<td>HYDROCOOLS</td>
+				<td>O</td>
+				<td>C</td>
+			</tr>
+			<tr>
+				<td>11</td>
+				<td>???</td>
+				<td>???</td>
+				<td>?</td>
+				<td>?</td>
+			</tr>
+			<tr>
+				<td>12</td>
+				<td>???</td>
+				<td>???</td>
+				<td>?</td>
+				<td>?</td>
+			</tr>
+			<tr>
+				<td>13</td>
+				<td>Before and AfterMASH</td>
+				<td>COULD HAVE BEEN</td>
+				<td>E</td>
+				<td>B</td>
+			</tr>
+			<tr>
+				<td>14</td>
+				<td>Get Her!  Together!</td>
+				<td>BOBBY HENDRICKS</td>
+				<td>B</td>
+				<td>O</td>
+			</tr>
+		</table>
+		<p>The A column doesn't look very promising, but the B column seems to spell out ONE-TWO COMBO (which is a decent description of the letter pattern in the answers).</p>
+	</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Puzzling Is My Middle Name</title>
+	</head>
+	<body>
+		<h3>This is an example of how to solve the puzzle <a href="http://www.mit.edu/~puzzle/2017/puzzle/puzzling_is_my_middle_name.html">Puzzling Is My Middle Name</a> from the 2017 MIT Mystery Hunt</h3>
+		<img src="pimmn1.png">
+		<p>We have a list of names in the left column and a list of names in the right column.  Let's try doing what's obvious and connect them!  Many of the names are pretty generic, but a few are uncommon; there's more or less only one notable BOOKER, SALMON, BLIGE, MURROW, or SELZNICK.</p>
+		<img src="pimmn2.png">
+		<p>Each of the lines we drew overlaps exactly three letters.  That's not ideal--best case would be if each line crossed exactly one letter, so it's obvious how to extract the answer--but the fact that they all cross the same amount suggests we're on the right track.</p>
+		<p>The next a-ha is to realize that all of the people we've used so far have a middle initial commonly included as part of their name (Booker T. Washington, Salmon P. Chase, Mary J. Blige, Edward R. Murrow, David O. Selznick).  With that in mind, we can place more connections, such as Samuel L. Jackson and Susan B. Anthony.  Eventually we can connect all of the names.  (Some of the individual names have multiple options--Michael J. Fox is probably more notable than either Michael C. Hall or Vivica A. Fox, but they're in the puzzle and he's not--but there should be only one way to use all of the names exactly once.) </p>
+		<img src="pimmn3.png">
+		<p>What's next?  Well, we have a set of celebrities, each associated with a trigram.  We haven't used the fact that these people all have middle initials, though, and looking it over, those middle initials are unique.  That suggests the next step will be to order the trigrams by the middle initial.</p>
+		<table>
+			<tr>
+				<td>VIVICA A FOX</td>
+				<td>F</td><td>L</td><td>L</td>
+			</tr>
+			<tr>
+				<td>SUSAN B ANTHONY</td>
+				<td>U</td><td>I</td><td>O</td>
+			</tr>
+			<tr>
+				<td>MICHAEL C HALL</td>
+				<td>R</td><td>G</td><td>O</td>
+			</tr>
+			<tr>
+				<td>FRANKLIN D ROOSEVELT</td>
+				<td>T</td><td>H</td><td>K</td>
+			</tr>
+			<tr>
+				<td>ROBERT E LEE</td>
+				<td>H</td><td>T</td><td>O</td>
+			</tr>
+			<tr>
+				<td>JOHN F KENNEDY</td>
+				<td>E</td><td>Y</td><td>V</td>
+			</tr>
+			<tr>
+				<td>MARY J BLIGE</td>
+				<td>R</td><td>E</td><td>E</td>
+			</tr>
+			<tr>
+				<td>PHILIP K DICK</td>
+				<td>T</td><td>A</td><td>R</td>
+			</tr>
+			<tr>
+				<td>SAMUEL L JACKSON</td>
+				<td>O</td><td>R</td><td>T</td>
+			</tr>
+			<tr>
+				<td>IAIN M BANKS</td>
+				<td>T</td><td>O</td><td>O</td>
+			</tr>
+			<tr>
+				<td>DAVID O SELZNICK</td>
+				<td>H</td><td>R</td><td>T</td>
+			</tr>
+			<tr>
+				<td>SALMON P CHASE</td>
+				<td>E</td><td>A</td><td>H</td>
+			</tr>
+			<tr>
+				<td>EDWARD R MURROW</td>
+				<td>R</td><td>L</td><td>E</td>
+			</tr>
+			<tr>
+				<td>HARRY S TRUMAN</td>
+				<td>I</td><td>D</td><td>L</td>
+			</tr>
+			<tr>
+				<td>BOOKER T WASHINGTON</td>
+				<td>G</td><td>R</td><td>E</td>
+			</tr>
+			<tr>
+				<td>GEORGE W BUSH</td>
+				<td>H</td><td>I</td><td>F</td>
+			</tr>
+			<tr>
+				<td>FRANCIS X BUSHMAN</td>
+				<td>T</td><td>N</td><td>T</td>
+			</tr>
+		</table>
+		<p>Given that this puzzle's all about middle initials, the answer phrase is found by reading down the central column: LIGHTYEAR OR ALDRIN, giving BUZZ.  (If you didn't guess to read the central column, the left and right columns both have messages to that effect.)</p>
+	</body>
+</html>

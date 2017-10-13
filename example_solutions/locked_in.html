@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Locked In</title>
+	</head>
+	<body>
+		<h3>This is an example of how to solve the puzzle <a href="http://www.mit.edu/~puzzle/2017/puzzle/puzzling_is_my_middle_name.html">Puzzling is my Middle Name</a> from the 2017 MIT Mystery Hunt</h3>
+		<img src="li1.png">
+		<p>This puzzle gives a detailed walkthrough of a particularly elaborate <a href="https://en.wikipedia.org/wiki/Escape_room">escape room</a>.  Every paragraph is full of very specific details, and is followed by a series of blanks that includes a little door icon and one blank highlighted with a red border, and at the end there appears to be an SAT-style analogy with 12 blanks.  (Apologies to any readers too young to remember when the SAT test had an analogies section.)  Reading the paragraphs carefully, two things might stand out:</p>
+		<ul>
+			<li><strong>Each paragraph references a specific pop-culture property.</strong>  Thanks to the reference to "the [...] gate is down", I immediately recognize the first paragraph as <u>Ender's Game</u>; maybe you're more likely to recognize the X-Men section, or <u>1984</u>, or <em>Hamilton</em>.  With a little more digging, you'll find that all of these works feature something with "Room" in the name: Battle Room from <u>Ender's Game</u>, Room 101 from <u>1984</u>, The Room Where It Happens from <em>Hamilton</em>...  These names fit in the provided blanks if the word "room" is replaced by the door symbol, and the paragraphs are arranged alphabetically by room name as an additional confirmation.  </li>
+			<li><strong>There are a lot of hints to the order that these paragraphs happen in.</strong>  Most obviously, the second paragraph is clearly the start and the sixth is clearly the end.  There are also subtler clues: The first paragraph says that you left the previous room through the floor, which means it must follow either the tenth or the twelfth, for instance.</li>
+		</ul>
+		<p>Putting these together, one thing to try would be to put the paragraphs into chronological order and use the letters that fall in the highlighted squares to fill in the analogy.  Doing so gives the message "BOOT : BIT :: THESE : ?"  The first half suggests to replace a double-O with an I; for the second half, the important thing is that these were all ROOMS (and this was emphasized by the special character in the blanks).  Combining those gives the final answer RIMS.</p>
+		<p>Note that it's not necessary to identify all the rooms to read this message.  Looking at my solving team's spreadsheet, we never figured out what the last paragraph was, but we were able to guess what the intended analogy was.</p>
+		<img src="li2.png">
+	</body>
+</html>
